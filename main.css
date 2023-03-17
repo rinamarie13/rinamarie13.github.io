@@ -1,0 +1,201 @@
+a {
+    color:#3A4A3C;
+    font-size: 20px;
+}
+article a {
+    font-size: 20px;
+}
+article p {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 5px;
+    max-width: 300px;
+}
+body {
+    background-color:#E7F7E9;
+    font-family: 'Itim', cursive;
+}
+h1 {
+    color:#32663A;
+    font-size: 56.54px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+h2 {
+    color:#57B365;
+    font-size: 39.99px;
+    font-weight: bolder;
+    margin: 10px;
+}
+img {
+    margin-top: 20px;
+}
+.aboutme {
+    margin-bottom: 24px;
+    text-align: center;
+}
+.aboutme p {
+    font-size: 28.28px;
+}
+.description p {
+    font-size: 28.28px;
+    font-weight: normal;
+    margin: 0px;
+    text-align: center;
+}
+.logo {
+    font-size: 79.95px;
+    font-weight: bolder;
+    text-align: center;
+}
+/* Placement for header & footer for ALL Grid Setup */
+header {
+    grid-area:header;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-areas: 
+        'header spot2';
+    justify-items: end;
+}
+footer {
+    grid-area: footer;
+}
+/* Main Page Grid and Flex Setup */
+.maincontainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 500px auto;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+}
+.mnav {
+    grid-area: main;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    /*
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'f1 . f3 .'
+        '. f2 . f4';
+    column-gap: 24px;
+    row-gap: 48px;
+    */
+}
+/* Crochet Grid and Flex Setup */
+.crochetcontainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+}
+.cprojects {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'accessories'
+        'plants'
+        'other';
+}
+.accessoriescontainer {
+    grid-area: accessories;
+    display: flex;
+    align-content:stretch;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+.plantcontainer {
+    grid-area: plants;
+    display: flex;
+    align-content:stretch;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+.opcontainer {
+    grid-area: other;
+    display: flex;
+    align-content:stretch;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+/* FB Grid and Flex Setup */
+.fbcontainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+}
+.fbprojects {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'normal'
+        'alpha';
+}
+.normalcontainer {
+    grid-area: normal;
+    display: flex;
+    align-content:stretch;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+.alphacontainer {
+    grid-area: alpha;
+    display: flex;
+    align-content:stretch;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+/* Boondoggle Grid and Flex Setup */
+.bdcontainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';    
+}
+.bdprojects {
+    grid-area: main;
+    display: flex;
+    align-content:stretch;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+/* Misc Grid and Flex Setup */
+.misccontainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer'; 
+}
+.miscprojects {
+    grid-area: main;
+    display: flex;
+    align-content:stretch;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+/* @media screen and (max-width: 1024px) {
+    
+} */
