@@ -21,7 +21,8 @@ h1 {
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 0px;
-    text-align: center;
+    margin-left: 0px;
+    text-align: left;
 }
 h2 {
     color:#57B365;
@@ -42,8 +43,9 @@ img {
 .description p {
     font-size: 28.28px;
     font-weight: normal;
-    margin: 0px;
-    text-align: center;
+    margin-top: 24px;
+    margin-left: 0px;
+    text-align: left;
 }
 .logo {
     font-size: 79.95px;
@@ -53,11 +55,6 @@ img {
 /* Placement for header & footer for ALL Grid Setup */
 header {
     grid-area:header;
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-areas: 
-        'header spot2';
-    justify-items: end;
 }
 footer {
     grid-area: footer;
@@ -195,7 +192,8 @@ footer {
     justify-content: flex-start;
     flex-flow: row wrap;
 }
-
-/* @media screen and (max-width: 1024px) {
-    
-} */
+@media screen and (max-width: 1024px) {
+    .description p {
+        font-size: 75%;
+    }
+}
